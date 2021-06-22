@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace TrafficLightSystem
 {
-    public class Green : ITrafficLight1, ITrafficLight2
+    public class Green : ITrafficLight
     {
-        public void Change(TrafficLight1 light)
-        {
-            light.State = new Yellow();
-        }
-
-        public void Change(TrafficLight2 light)
+        public void Change(TrafficLight light)
         {
             light.State = new Yellow();
         }

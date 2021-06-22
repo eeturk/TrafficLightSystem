@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace TrafficLightSystem
 {
-    public class TrafficLight2
+    public interface ITrafficLight
     {
-        public ITrafficLight2 State { get; set; }
-
-        public void Change()
-        {
-            State.Change(this);
-        }
+        void Change(TrafficLight light);
     }
 }

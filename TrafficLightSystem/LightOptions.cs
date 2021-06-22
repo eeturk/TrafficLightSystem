@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace TrafficLightSystem
 {
-    public class TrafficLight1
+    public class LightOptions
     {
-        public ITrafficLight1 State { get; set; }
-
-        public void Change()
+        public enum States
         {
-            State.Change(this);
+            INVALID,
+            RED,
+            GREEN,
+            YELLOW
         }
     }
 }
